@@ -93,6 +93,24 @@ body {
   line-height: 1.5em;
 }
 
+.page3 {
+  background-color: black;
+  align-content: start;
+  align-items: start;
+  height: min-content;
+  max-width: 1400px;
+  overflow: visible;
+  padding: 50px 100px;
+  width: 1400px;
+}
+.page3-heading {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  font-weight: 300;
+  letter-spacing: -2.6px;
+  line-height: 1.5em;
+}
+
 /* Mobile Screen */
 @media only screen and (max-width: 700px) {
   .hero-heading {
@@ -106,18 +124,20 @@ body {
   }
 
   .profile {
-    width: 350px;
+    width: 325px;
+    margin: 10px;
   }
-  .page2-box{
-	justify-content: center;
-	margin: auto;
+  .page2-box {
+    justify-content: center;
+    margin: auto;
   }
   .abt-heading {
     color: rgb(255, 255, 255);
     font-size: 3em;
     font-weight: 300;
     letter-spacing: -2.6px;
-    line-height: 1.5em;
+    line-height: 1.4em;
+    margin-top: 20px;
   }
 
   .abt-txt {
@@ -137,5 +157,40 @@ body {
   to {
     backdrop-filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.568);
+  }
+}
+/* Scroll Animation */
+#scroll-container {
+  background-color: black;
+  color: rgb(119, 119, 119);
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-content {
+  display: flex;
+  animation: scroll-animation 20s linear infinite;
+  padding: 40px 30px;
+}
+
+.scroll-text {
+  font-size: 2.6em;
+  text-decoration: none; /* Removes underline from links */
+  color: rgb(119, 119, 119); /* Initial link color */
+  padding-right: 50px; /* Spacing between items */
+}
+
+.scroll-text:hover {
+  color: rgb(84, 84, 84); /* Initial link color */
+}
+
+@keyframes scroll-animation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
