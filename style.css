@@ -1,0 +1,172 @@
+/* Basic Setup */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+/* Hero Section Setup */
+.page1{
+	height: 100vh;
+	width: 100%;
+	background-image: url(/img/preksha.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.page1 .overlay{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	animation-name: overlay;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+.page1 h1{
+	font-size: 3em;
+	font-weight: 550;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: white;
+	margin: 30px 0px;
+	animation-name: heading;
+	animation-duration: 0.7s;
+	animation-delay: 0.3;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+.page1 .text{
+	color: white;
+	font-size: 0.8em;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+.page1 .btn-box{
+	/* background-color: pink; */
+	display:flex;
+	column-gap: 30px;
+}
+
+.page1 .btn-box button{
+	padding: 10px 35px;
+	border-radius: 25px;
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0);
+	color: white;
+	text-transform: uppercase;
+	font-weight: 200;
+	border: solid 2px rgb(255, 255, 255);
+	cursor: pointer;
+}
+/* Hero Section Ends */
+.page2{
+	height: 100vh;
+	width: 100%;
+	background-image: url(/img/pool.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.page2 .overlay{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	animation-name: overlayy;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+.page2 h1{
+	font-size: 3em;
+	font-weight: 550;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: white;
+	margin: 30px 0px;
+	animation-name: heading;
+	animation-duration: 0.7s;
+	animation-delay: 0.3;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+.page2 .text{
+	color: white;
+	font-size: 0.8em;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+.page2 .btn-box{
+	/* background-color: pink; */
+	display:flex;
+	column-gap: 30px;
+}
+
+.page2 .btn-box button{
+	padding: 10px 35px;
+	border-radius: 25px;
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0);
+	color: white;
+	text-transform: uppercase;
+	font-weight: 200;
+	border: solid 2px rgb(255, 255, 255);
+	cursor: pointer;
+}
+
+
+/* Mobile Screen */
+@media only screen and (max-width: 600px) {
+    /* Styles for mobile phones go here */
+}
+
+
+
+
+/* Animation  */
+@keyframes overlay {
+    from {
+        backdrop-filter: blur(0px);
+	background-color: rgba(0, 0, 0, 0.21);
+}
+    to {
+        backdrop-filter: blur(2px);
+	background-color: rgba(0, 0, 0, 0.568);
+}
+}
+@keyframes overlayy {
+    from {
+        backdrop-filter: blur(0px);
+	background-color: rgba(0, 0, 0, 0.21);
+}
+    to {
+        backdrop-filter: blur(2px);
+	background-color: rgba(0, 0, 0, 0.568);
+}
+}
+@keyframes heading {
+    from {
+        transform: scale(0.7);
+        opacity: 0.6;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
