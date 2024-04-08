@@ -13,28 +13,34 @@
 </head>
 
 <body>
-
   <div id="main" data-scroll-container>
     <div class="page1">
       <div class="overlay">
         <p class="text">Goa, India</p>
-        <h1 class="hero-heading" data-aos="fade-down">
+        <h1 class="hero-heading" 
+        data-aos="fade-in"
+        data-aos-offset="200" data-aos-delay="1" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
           Preksha Chand
         </h1>
         <button class="btn">Contact Now</button>
       </div>
-
     </div>
     <div class="page2">
       <div class="img-box">
-      <img src="/img/prxa.jpg" alt="BL" class="profile">
+        <img src="/img/prxa.jpg" alt="BL" class="profile" />
       </div>
       <div class="page2-box">
-      <h1 class="abt-heading">Meet Preksha</h1>
-      <p class="abt-txt">
-        Hello, I'm Preksha, a superhost in Goa, India. I help you turn property dreams into income realities. I'm all about top-notch service, clear communication, and making sure both the property owners and my guests are happy. Whether you already own a property or looking to buy one, I can help you unlock the full potential of your investments.
-      </p>
-      <button class="btn">Contact Me</button>
+        <h1 class="abt-heading">Meet Preksha</h1>
+        <p class="abt-txt">
+          Hello, I'm Preksha, a superhost in Goa, India. I help you turn
+          property dreams into income realities. I'm all about top-notch
+          service, clear communication, and making sure both the property
+          owners and my guests are happy. Whether you already own a property
+          or looking to buy one, I can help you unlock the full potential of
+          your investments.
+        </p>
+        <button class="btn">Contact Me</button>
       </div>
     </div>
 
@@ -52,9 +58,21 @@
 
     <div class="page3">
       <h1 class="page3-heading">Meet Preksha</h1>
+      <div class="listing">
+        <div class="card">
+          <img src="/img/villa-house-model-key-drawing-retro-desktop-real-estate-sale-concept_1387-310.jpg"
+            class="image" width="40%" />
+          <div class="price">999</div>
+          <div class="about">6 People</div>
+        </div>
+        <div class="card">
+          <img src="/img/villa-house-model-key-drawing-retro-desktop-real-estate-sale-concept_1387-310.jpg"
+            class="image" width="40%" />
+          <div class="price">999</div>
+          <div class="about">6 People</div>
+        </div>
+      </div>
     </div>
-
-
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
@@ -65,7 +83,25 @@
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      // Global settings:
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: 'ease-in-out', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: true, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
   </script>
 </body>
 
