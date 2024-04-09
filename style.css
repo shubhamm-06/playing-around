@@ -10,7 +10,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: black;
 }
 /* Hero Section Setup */
 .page1 {
@@ -152,8 +152,133 @@ body {
   font-size: 1.5em;
 }
 
+.page4{
+  width: inherit;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.page4-container{
+  width: 100%;
+  padding: 20px 50px;
+}
+.page4-heading{
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  font-weight: 300;
+  letter-spacing: -2.6px;
+  line-height: 1.5em;
+  margin-left: 50px;
+}
+.testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 40px 0px;
+
+  
+}
+
+.testimonial-box{
+  font-size: 1.1em;
+  line-height: 1.6em;
+  align-content: start;
+  align-items: start;
+  background-color: #1c1c1c;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px #0000000d,0 2px 4px #0000001a;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 32px;
+  position: relative;
+  text-decoration: none;
+  width: 250px;
+}
+.client{
+  display: flex;
+  column-gap: 10px;
+  font-size: 0.8em;
+  margin: 10px 0px;
+}
+.client-img{
+  width: 40px;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+}
+
+.page5{
+  text-align: center;
+  background-color: black;
+  padding: 90px 0px;
+}
+.page5-heading{
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  font-weight: 300;
+  letter-spacing: -2px;
+  line-height: 1.5em;
+}
+.page5-sub-heading{
+  color: rgb(119, 119, 119);
+  font-size: 3em;
+  font-weight: 300;
+  letter-spacing: -3px;
+  line-height: 1.3em;
+}
+
+
+
+.footer {
+  background-color: #050505;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #ededed;
+  margin: 0 15px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover, .social-icon:focus {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.copy-right {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
 /* Mobile Screen */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .hero-heading {
     font-size: 3em;
     letter-spacing: -0.5px;
@@ -240,6 +365,75 @@ body {
     font-size: 1.3em;
     margin: 10px 0px;
   }
+  .testimonials{
+
+    flex-direction: column;
+    
+  }
+
+  .page4{
+    width: inherit;
+  }
+  .page4-container{
+    padding: 20px 0px;
+  }
+  .page4-heading{
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: -2.6px;
+    line-height: 1.4em;
+    margin-top: 20px;
+    padding-left: 25px;
+  }
+  
+  .testimonial-box{
+    font-size: 1em;
+    line-height: 1.4em;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px #0000000d,0 2px 4px #0000001a;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    padding: 22px;
+    width: 75%;
+  }
+
+
+
+  .client-img{
+    width: 40px;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+  }
+
+  .page5-heading{
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 1.5em;
+  }
+  .page5-sub-heading{
+    color: rgb(119, 119, 119);
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 1.3em;
+  }
+
+  
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .social-icons {
+    order: -1; /* Puts social icons on the left on wider screens */
+  }
+  
 }
 
 /* Animation  */
@@ -270,14 +464,14 @@ body {
 }
 
 .scroll-text {
-  font-size: 2.6em;
+  font-size: 2.3em;
   text-decoration: none; /* Removes underline from links */
   color: rgb(119, 119, 119); /* Initial link color */
   padding-right: 50px; /* Spacing between items */
 }
 
 .scroll-text:hover {
-  color: rgb(84, 84, 84); /* Initial link color */
+  color: rgb(255, 255, 255); /* Initial link color */
 }
 
 @keyframes scroll-animation {
