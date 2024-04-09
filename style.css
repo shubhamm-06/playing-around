@@ -248,6 +248,10 @@ body {
 
 /* Mobile Screen */
 @media only screen and (max-width: 1200px) {
+
+  .page1 {
+    height: 60vh;  
+  }
   .hero-heading {
     font-size: 3em;
     letter-spacing: -0.5px;
