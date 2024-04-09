@@ -32,7 +32,7 @@ body {
   flex-direction: column;
   text-align: center;
   animation-name: overlay;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 }
@@ -237,6 +237,15 @@ body {
   line-height: 1.5em;
   margin-left: 50px;
 }
+.container-social{
+  display: flex;
+  justify-content: center;
+}
+.social-icon{
+  color: silver;
+  margin: 10px 5px;
+}
+
 /* Mobile Screen */
 @media only screen and (max-width: 1200px) {
   .hero-heading {
