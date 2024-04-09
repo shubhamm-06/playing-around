@@ -398,11 +398,11 @@ body {
 @keyframes overlay {
   from {
     backdrop-filter: blur(0px);
-    background-color: rgba(0, 0, 0, 0.21);
+    background-color: rgba(0, 0, 0, 0);
   }
   to {
     backdrop-filter: blur(2px);
-    background-color: rgba(0, 0, 0, 0.568);
+    background-color: rgba(0, 0, 0, 0.34);
   }
 }
 /* Scroll Animation */
@@ -439,4 +439,10 @@ body {
   100% {
     transform: translateX(-50%);
   }
+}
+
+.btn:hover{
+  color: rgb(255, 255, 255);
+  border: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
 }
