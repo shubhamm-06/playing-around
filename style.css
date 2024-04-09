@@ -130,17 +130,18 @@ body {
 }
 .price {
   color: white;
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: -0.5px;
   margin: 5px 0px;
 }
 .about {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  color: aliceblue;
 }
 .about-prop {
-  font-size: 0.9em;
+  font-size: 1em;
+  margin: 10px 0px;
   color: rgb(119, 119, 119);
 }
 
@@ -173,7 +174,7 @@ body {
   font-weight: 300;
   letter-spacing: -2.6px;
   line-height: 1.5em;
-  margin-left: 50px;
+  margin-left: 4%;
 }
 .testimonials{
   display: flex;
@@ -196,8 +197,8 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 100%;
-  justify-content: flex-start;
+  height: 380px;
+  justify-content: center;
   overflow: hidden;
   padding: 32px;
   position: relative;
@@ -211,15 +212,14 @@ body {
   margin: 10px 0px;
 }
 .client-img{
-  width: 40px;
+  width: 55px;
   border-radius: 100%;
-  aspect-ratio: 1/1;
 }
 
 .page5{
   text-align: center;
   background-color: black;
-  padding: 90px 0px;
+  padding: 50px 0px;
 }
 .page5-heading{
   color: rgb(255, 255, 255);
@@ -227,58 +227,18 @@ body {
   font-weight: 300;
   letter-spacing: -2px;
   line-height: 1.5em;
+  margin-left: 50px;
 }
 .page5-sub-heading{
   color: rgb(119, 119, 119);
   font-size: 3em;
   font-weight: 300;
-  letter-spacing: -3px;
-  line-height: 1.3em;
+  letter-spacing: -1px;
+  line-height: 1.5em;
+  margin-left: 50px;
 }
-
-
-
-.footer {
-  background-color: #050505;
-  color: #fff;
-  padding: 40px 0;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.social-icons {
-  margin-bottom: 20px;
-}
-
-.social-icon {
-  text-decoration: none;
-  color: #ededed;
-  margin: 0 15px;
-  font-size: 20px;
-  transition: color 0.3s ease;
-}
-
-.social-icon:hover, .social-icon:focus {
-  color: #ffffff;
-  transform: scale(1.1);
-}
-
-.copy-right {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-
 /* Mobile Screen */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   .hero-heading {
     font-size: 3em;
     letter-spacing: -0.5px;
@@ -346,7 +306,7 @@ body {
   }
   .price {
     color: white;
-    font-size: 2.5em;
+    font-size: 1.9em;
     letter-spacing: -0.5px;
     margin-bottom: 5px;
   }
@@ -400,38 +360,10 @@ body {
     width: 75%;
   }
 
-
-
   .client-img{
     width: 40px;
     border-radius: 100%;
     aspect-ratio: 1/1;
-  }
-
-  .page5-heading{
-    color: rgb(255, 255, 255);
-    font-size: 3em;
-    font-weight: 300;
-    letter-spacing: -1px;
-    line-height: 1.5em;
-  }
-  .page5-sub-heading{
-    color: rgb(119, 119, 119);
-    font-size: 2em;
-    font-weight: 300;
-    letter-spacing: -2px;
-    line-height: 1.3em;
-  }
-
-  
-  .container {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
-
-  .social-icons {
-    order: -1; /* Puts social icons on the left on wider screens */
   }
   
 }
@@ -471,7 +403,7 @@ body {
 }
 
 .scroll-text:hover {
-  color: rgb(255, 255, 255); /* Initial link color */
+  color: rgb(84, 84, 84); /* Initial link color */
 }
 
 @keyframes scroll-animation {
