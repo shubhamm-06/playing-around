@@ -11,6 +11,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: black;
+  /* overflow-x: hidden;  */
 }
 /* Hero Section Setup */
 .page1 {
@@ -97,8 +98,7 @@ body {
   background-color: black;
   align-content: center;
   align-items: center;
-  overflow: hidden;
-  width: 100vw;
+  width: inherit;
 }
 .page3-container {
   padding: 20px 160px;
@@ -287,7 +287,7 @@ body {
     font-weight: 300;
     letter-spacing: -2.6px;
     line-height: 1.4em;
-    margin-top: 20px;
+    margin: 20px 0px;
   }
 
   .listing {
@@ -339,12 +339,11 @@ body {
   }
   .page4-heading{
     color: rgb(255, 255, 255);
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 300;
     letter-spacing: -2.6px;
     line-height: 1.4em;
     margin-top: 20px;
-    padding-left: 25px;
   }
   
   .testimonial-box{
@@ -364,6 +363,24 @@ body {
     width: 40px;
     border-radius: 100%;
     aspect-ratio: 1/1;
+  }
+
+  .page5-heading{
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    font-weight: 300;
+    letter-spacing: -2.6px;
+    line-height: 1.4em;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .page5-sub-heading{
+    color: rgb(119, 119, 119);
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 1em;
+    margin: 0;
   }
   
 }
