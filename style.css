@@ -95,13 +95,13 @@ body {
 
 .page3 {
   background-color: black;
-  align-content: start;
-  align-items: start;
-  height: min-content;
-  max-width: 1400px;
+  align-content: center;
+  align-items: center;
   overflow: hidden;
-  padding: 50px 100px;
-  width: 1400px;
+  width: 100vw;
+}
+.page3-container {
+  padding: 20px 160px;
 }
 .page3-heading {
   color: rgb(255, 255, 255);
@@ -110,9 +110,50 @@ body {
   letter-spacing: -2.6px;
   line-height: 1.5em;
 }
+.listing {
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.listing-image {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 15px;
+  margin: 15px 0px;
+}
+.price {
+  color: white;
+  font-size: 3em;
+  letter-spacing: -0.5px;
+  margin: 5px 0px;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  color: aliceblue;
+}
+.about-prop {
+  font-size: 0.9em;
+  color: rgb(119, 119, 119);
+}
+
+.listing-more {
+  color: rgb(119, 119, 119);
+  text-align: end;
+  text-decoration: none;
+  margin: 70px 0px;
+  font-size: 1.5em;
+}
 
 /* Mobile Screen */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
   .hero-heading {
     font-size: 3em;
     letter-spacing: -0.5px;
@@ -148,18 +189,56 @@ body {
   }
 
   .page3 {
-	width: 100vw !important;
-	max-width: 100vw !important;
-	padding: 70px 20px;
-}
+    width: 100%;
+    padding: 70px 0px;
+  }
+  .page3-container {
+    padding: 20px 20px;
+  }
 
-  .page3-heading{
-	color: rgb(255, 255, 255);
+  .page3-heading {
+    color: rgb(255, 255, 255);
     font-size: 3em;
     font-weight: 300;
     letter-spacing: -2.6px;
     line-height: 1.4em;
     margin-top: 20px;
+  }
+
+  .listing {
+    flex-direction: column;
+  }
+  .listing-image {
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .price {
+    color: white;
+    font-size: 2.5em;
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: aliceblue;
+  }
+  .about-prop {
+    font-size: 0.9em;
+    margin: 5px 0px;
+    color: rgb(119, 119, 119);
+  }
+  .listing-more {
+    font-size: 1.3em;
+    margin: 10px 0px;
   }
 }
 
@@ -186,7 +265,7 @@ body {
 
 .scroll-content {
   display: flex;
-  animation: scroll-animation 20s linear infinite;
+  animation: scroll-animation 30s linear infinite;
   padding: 40px 30px;
 }
 
